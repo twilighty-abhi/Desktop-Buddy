@@ -1,15 +1,15 @@
 # Desktop Buddy
 
-[![GitHub release](https://img.shields.io/github/v/release/twilighty-abhi/desktop-buddy)](https://github.com/twilighty-abhi/desktop-buddy/releases)
+[![GitHub release](https://img.shields.io/github/v/release/twilighty-abhi/Desktop-Buddy?sort=semver)](https://github.com/twilighty-abhi/Desktop-Buddy/releases)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Build status](https://github.com/twilighty-abhi/desktop-buddy/workflows/CI/badge.svg)](https://github.com/twilighty-abhi/desktop-buddy/actions?query=workflow%3ACI)
+[![Build status](https://github.com/twilighty-abhi/Desktop-Buddy/workflows/CI/badge.svg)](https://github.com/twilighty-abhi/Desktop-Buddy/actions?query=workflow%3ACI)
 [![Node 24](https://img.shields.io/badge/node-%3E%3D19.0.0-brightgreen)](package.json)
 [![Electron 41](https://img.shields.io/badge/electron-41.0.3-blue)](https://www.electronjs.org/)
-[![Last commit](https://img.shields.io/github/last-commit/twilighty-abhi/desktop-buddy)](https://github.com/twilighty-abhi/desktop-buddy/commits)
+[![Last commit](https://img.shields.io/github/last-commit/twilighty-abhi/Desktop-Buddy)](https://github.com/twilighty-abhi/Desktop-Buddy/commits)
 
 Your personal wellness coach for healthy work habits. Break reminders, Pomodoro timer, task tracking, and mood logging—all in a beautiful desktop app.
 
-**[⬇️ Download Latest Release](https://github.com/twilighty-abhi/desktop-buddy/releases/latest)** | **[📋 Roadmap](ROADMAP.md)** | **[🏗️ Architecture](ARCHITECTURE.md)** | **[💬 Discussions](https://github.com/twilighty-abhi/desktop-buddy/discussions)**
+**[⬇️ Download Latest Release](https://github.com/twilighty-abhi/Desktop-Buddy/releases/latest)** | **[📋 Roadmap](ROADMAP.md)** | **[🏗️ Architecture](ARCHITECTURE.md)** | **[💬 Discussions](https://github.com/twilighty-abhi/Desktop-Buddy/discussions)**
 
 ---
 
@@ -30,7 +30,7 @@ Your personal wellness coach for healthy work habits. Break reminders, Pomodoro 
 ## 🚀 Quick Start
 
 ### Download & Run
-1. Download `Desktop Buddy.exe` from [Releases](https://github.com/twilighty-abhi/desktop-buddy/releases)
+1. Download `Desktop Buddy.exe` from [Releases](https://github.com/twilighty-abhi/Desktop-Buddy/releases)
 2. Extract and run the `.exe` file
 3. Grant notification permissions when prompted
 4. Start your wellness journey!
@@ -41,8 +41,8 @@ Your personal wellness coach for healthy work habits. Break reminders, Pomodoro 
 
 ```bash
 # Clone and install
-git clone https://github.com/twilighty-abhi/desktop-buddy.git
-cd desktop-buddy
+git clone https://github.com/twilighty-abhi/Desktop-Buddy.git
+cd Desktop-Buddy
 npm install
 
 # Start development server
@@ -80,6 +80,7 @@ Toggle theme anytime using the button in the titlebar. Your preference is saved 
 - **[Roadmap](ROADMAP.md)** - Planned features and community voting
 - **[Security Policy](SECURITY.md)** - Vulnerability reporting
 - **[Changelog](CHANGELOG.md)** - Version history and release notes
+- **[GitHub Releases](https://github.com/twilighty-abhi/Desktop-Buddy/releases)** - Download and release notes
 
 ---
 
@@ -106,7 +107,7 @@ Toggle theme anytime using the button in the titlebar. Your preference is saved 
 - **Package Size**: ~150MB (including Electron)
 - **Memory Usage**: ~170MB typical
 - **Startup Time**: 2-3 seconds
-- **Test Coverage**: Core modules (dataStore, settingsStore, reminderEngine)
+- **Test Coverage**: 34 unit tests across core modules
 
 ---
 
@@ -144,9 +145,9 @@ See all [contributors](https://github.com/twilighty-abhi/desktop-buddy/contribut
 
 ## 📞 Support & Feedback
 
-- **Bugs**: [Open an issue](https://github.com/twilighty-abhi/desktop-buddy/issues/new?template=bug_report.yml)
-- **Ideas**: [Start a discussion](https://github.com/twilighty-abhi/desktop-buddy/discussions)
-- **Feature Requests**: [Request a feature](https://github.com/twilighty-abhi/desktop-buddy/issues/new?template=feature_request.yml)
+- **Bugs**: [Open an issue](https://github.com/twilighty-abhi/Desktop-Buddy/issues/new?template=bug_report.yml)
+- **Ideas**: [Start a discussion](https://github.com/twilighty-abhi/Desktop-Buddy/discussions)
+- **Feature Requests**: [Request a feature](https://github.com/twilighty-abhi/Desktop-Buddy/issues/new?template=feature_request.yml)
 - **Security Issues**: See [SECURITY.md](SECURITY.md)
 
 ---

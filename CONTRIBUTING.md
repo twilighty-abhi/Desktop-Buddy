@@ -15,8 +15,8 @@ Thanks for contributing to Desktop buddy!
 
 1. **Fork and clone** the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/desktop-buddy.git
-cd desktop-buddy
+git clone https://github.com/YOUR_USERNAME/Desktop-Buddy.git
+cd Desktop-Buddy
 ```
 
 2. **Install dependencies**:
