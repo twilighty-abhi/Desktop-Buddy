@@ -15,12 +15,8 @@ permissions:
 
 jobs:
   analyze:
-    name: CodeQL Analysis
+    name: CodeQL Analysis (JavaScript)
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        language: ["javascript"]
 
     steps:
       - name: Checkout repository
@@ -29,7 +25,7 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
-          languages: ${{ matrix.language }}
+          languages: javascript
 
       - name: Create results directory
         run: mkdir -p results
@@ -38,8 +34,10 @@ jobs:
         uses: github/codeql-action/analyze@v3
         with:
           output: results
+          category: codeql-analysis
 
       - name: Upload SARIF results
         uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: results
+          category: codeql-analysis
