@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Desktop Buddy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="window-shell">
+      <header class="titlebar">
+        <div class="traffic-lights" aria-hidden="true">
+          <span class="light close"></span>
+          <span class="light minimize"></span>
+          <span class="light maximize"></span>
+        </div>
+        <p class="title">Desktop Buddy - Habit Playground</p>
+        <button id="themeToggle" class="theme-toggle secondary" type="button">Try Calm Design</button>
+      </header>
+
+      <main class="window-body">
+        <aside class="sidebar">
+          <div class="hero-copy">
+            <p class="kicker">GO FOR BETTER HABITS</p>
+            <h1>Meet your daily vibe coach</h1>
+            <p>Friendly nudges, colorful routines, and tiny wins through your day.</p>
+          </div>
+
+          <div class="mascot-card" aria-hidden="true">
+            <div class="face"></div>
+            <div class="arm arm-left"></div>
+            <div class="arm arm-right"></div>
+            <div class="leg leg-left"></div>
+            <div class="leg leg-right"></div>
+            <span class="bubble bubble-hi">Hello!</span>
+            <span class="bubble bubble-start">Let's do this</span>
+          </div>
+
+          <div class="nav-pills">
+            <span class="pill">Breaks</span>
+            <span class="pill">Hydration</span>
+            <span class="pill">Posture</span>
+            <span class="pill">Focus</span>
+            <span class="pill">Daily Mood</span>
+          </div>
+        </aside>
+
+        <section class="content">
+          <section class="card card-lime">
+            <h2>Break Reminders</h2>
+            <div class="row">
+              <label for="breakIntervalMinutes">Break interval (minutes)</label>
+              <input id="breakIntervalMinutes" type="number" min="5" max="180" />
+            </div>
+            <div class="row">
+              <label for="snoozeMinutes">Default snooze (minutes)</label>
+              <input id="snoozeMinutes" type="number" min="1" max="60" />
+            </div>
+            <div class="checks">
+              <label><input id="notificationsEnabled" type="checkbox" /> Enable notifications</label>
+              <label><input id="soundEnabled" type="checkbox" /> Enable notification sound</label>
+              <label><input id="autoRepeatAllDay" type="checkbox" /> Auto-repeat all day</label>
+            </div>
+          </section>
+
+          <section class="card card-sky">
+            <h2>Additional Scenarios</h2>
+            <div class="row">
+              <label for="hydrationIntervalMinutes">Hydration reminder (minutes)</label>
+              <input id="hydrationIntervalMinutes" type="number" min="10" max="240" />
+            </div>
+            <div class="row">
+              <label for="postureIntervalMinutes">Posture prompt (minutes)</label>
+              <input id="postureIntervalMinutes" type="number" min="10" max="240" />
+            </div>
+          </section>
+
+          <section class="card card-plum actions">
+            <h2>Actions</h2>
+            <div class="btns">
+              <button id="saveSettings">Save Settings</button>
+              <button id="testNotification" class="secondary">Test Notification</button>
+              <button id="snoozeNow">Snooze Now</button>
+              <button id="skipNow" class="secondary">Skip Current Break</button>
+            </div>
+          </section>
+
+          <section class="card card-neutral status-card">
+            <h2>Status</h2>
+            <p id="status" class="status">Loading assistant status...</p>
+          </section>
+
+          <section class="card card-pink">
+            <h2>Pomodoro Focus</h2>
+            <div class="row">
+              <label for="pomodoroWorkMinutes">Work (minutes)</label>
+              <input id="pomodoroWorkMinutes" type="number" min="5" max="120" value="25" />
+            </div>
+            <div class="row">
+              <label for="pomodoroBreakMinutes">Break (minutes)</label>
+              <input id="pomodoroBreakMinutes" type="number" min="3" max="60" value="5" />
+            </div>
+            <div class="btns">
+              <button id="startPomodoro">Start Pomodoro</button>
+              <button id="stopPomodoro" class="secondary">Stop</button>
+            </div>
+            <p id="pomodoroStatus" class="status">Pomodoro is idle</p>
+          </section>
+
+          <section class="card card-apricot">
+            <h2>Quick Tasks</h2>
+            <div class="task-entry">
+              <input id="taskInput" type="text" placeholder="Capture a task quickly..." maxlength="120" />
+              <button id="addTask">Add</button>
+            </div>
+            <ul id="taskList" class="list"></ul>
+          </section>
+
+          <section class="card card-mint">
+            <h2>Daily Plan and Review</h2>
+            <label class="field-label" for="dailyPlan">Plan</label>
+            <textarea id="dailyPlan" rows="3" placeholder="Top 3 priorities for today"></textarea>
+            <label class="field-label" for="dailyReview">Review</label>
+            <textarea id="dailyReview" rows="3" placeholder="How did the day go?"></textarea>
+            <div class="row">
+              <label for="mood">Mood / Energy</label>
+              <select id="mood">
+                <option value="">Select</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+            <button id="saveDaily">Save Daily Check-in</button>
+          </section>
+
+          <section class="card card-neutral status-card">
+            <h2>Recent Activity</h2>
+            <ul id="activityList" class="list"></ul>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
