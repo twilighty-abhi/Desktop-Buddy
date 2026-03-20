@@ -1,0 +1,34 @@
+name: Feature request
+description: Suggest an idea to improve the app
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem are you trying to solve?
+      placeholder: I get frustrated when...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should happen?
+      placeholder: It would be great if...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      placeholder: Any alternatives you considered
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      placeholder: Screenshots, references, constraints
