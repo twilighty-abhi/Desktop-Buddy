@@ -183,7 +183,7 @@ When modifying UI or themes:
 
 ## 🐛 Reporting Bugs
 
-Found a bug? Use the [bug report template](https://github.com/twilighty-abhi/desktop-buddy/issues/new?template=bug_report.yml):
+Found a bug? Use the [bug report template](https://github.com/twilighty-abhi/Desktop-Buddy/issues/new?template=bug_report.yml):
 
 - Clear summary
 - Reproduction steps
@@ -195,7 +195,7 @@ Found a bug? Use the [bug report template](https://github.com/twilighty-abhi/des
 
 ## 💡 Feature Ideas
 
-Have a great idea? [Open a discussion](https://github.com/twilighty-abhi/desktop-buddy/discussions) or [create a feature request](https://github.com/twilighty-abhi/desktop-buddy/issues/new?template=feature_request.yml).
+Have a great idea? [Open a discussion](https://github.com/twilighty-abhi/Desktop-Buddy/discussions) or [create a feature request](https://github.com/twilighty-abhi/Desktop-Buddy/issues/new?template=feature_request.yml).
 
 Check the [Roadmap](ROADMAP.md) to see planned features and vote on your favorites!
 
@@ -266,8 +266,8 @@ git push origin main --follow-tags
 
 ## ❓ Questions?
 
-- 💬 [GitHub Discussions](https://github.com/twilighty-abhi/desktop-buddy/discussions)
-- 🐛 [Create an Issue](https://github.com/twilighty-abhi/desktop-buddy/issues)
+- 💬 [GitHub Discussions](https://github.com/twilighty-abhi/Desktop-Buddy/discussions)
+- 🐛 [Create an Issue](https://github.com/twilighty-abhi/Desktop-Buddy/issues)
 - 📧 See [SECURITY.md](SECURITY.md) for security contact
 
 Thanks for making Desktop Buddy better! 🙌

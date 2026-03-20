@@ -139,7 +139,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 - GitHub for Actions CI/CD platform
 - Our contributors and community members
 
-See all [contributors](https://github.com/twilighty-abhi/desktop-buddy/contributors).
+See all [contributors](https://github.com/twilighty-abhi/Desktop-Buddy/contributors).
 
 ---
 
