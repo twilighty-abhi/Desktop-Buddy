@@ -39,3 +39,22 @@ jobs:
             release/Desktop Buddy-win32-x64/Desktop Buddy.exe
           generate_release_notes: true
           prerelease: false
+          body: |
+            ## 📥 Installation
+            
+            1. Download `Desktop Buddy.exe` from the assets below
+            2. Extract and run the `.exe` file
+            3. Grant notification permissions when prompted
+            
+            ## 📋 What's Included
+            - Windows portable executable (no installation required)
+            - All features from this release
+            - Use the included Settings to customize your experience
+            
+            ## 🐛 Found a Bug?
+            [Report it here](https://github.com/twilighty-abhi/desktop-buddy/issues/new?template=bug_report.yml)
+            
+            ## 📖 Documentation
+            - [Architecture Guide](https://github.com/twilighty-abhi/desktop-buddy/blob/main/ARCHITECTURE.md)
+            - [Contributing Guide](https://github.com/twilighty-abhi/desktop-buddy/blob/main/CONTRIBUTING.md)
+            - [Roadmap](https://github.com/twilighty-abhi/desktop-buddy/blob/main/ROADMAP.md)

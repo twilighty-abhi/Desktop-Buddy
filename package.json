@@ -5,7 +5,9 @@
   "scripts": {
     "start": "electron .",
     "dev": "electron .",
-    "test": "echo \"No tests configured yet\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "make:exe": "electron-packager . \"Desktop Buddy\" --platform=win32 --arch=x64 --out=release --overwrite --prune=true"
@@ -51,6 +53,18 @@
   "devDependencies": {
     "electron": "^41.0.3",
     "electron-builder": "^26.8.1",
-    "electron-packager": "^17.1.2"
+    "electron-packager": "^17.1.2",
+    "jest": "^30.3.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/main.js",
+      "!**/node_modules/**"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.js"
+    ]
   }
 }
