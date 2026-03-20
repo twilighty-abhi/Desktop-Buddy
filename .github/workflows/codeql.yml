@@ -23,21 +23,9 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3
+        uses: github/codeql-action/init@v4
         with:
           languages: javascript
 
-      - name: Create results directory
-        run: mkdir -p results
-
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3
-        with:
-          output: results
-          category: codeql-analysis
-
-      - name: Upload SARIF results
-        uses: github/codeql-action/upload-sarif@v3
-        with:
-          sarif_file: results
-          category: codeql-analysis
+        uses: github/codeql-action/analyze@v4
