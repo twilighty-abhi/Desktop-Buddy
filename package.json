@@ -1,0 +1,56 @@
+{
+  "name": "desktop-buddy",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "test": "echo \"No tests configured yet\"",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "make:exe": "electron-packager . \"Desktop Buddy\" --platform=win32 --arch=x64 --out=release --overwrite --prune=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Personal assistant desktop app with wellness reminders",
+  "build": {
+    "appId": "com.desktopbuddy.app",
+    "productName": "Desktop Buddy",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "src/**/*",
+      "public/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^41.0.3",
+    "electron-builder": "^26.8.1",
+    "electron-packager": "^17.1.2"
+  }
+}
